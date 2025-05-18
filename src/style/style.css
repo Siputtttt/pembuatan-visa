@@ -1,5 +1,5 @@
 .nav-leuser {
-	background-color: #dd8144;
+	background-color: #dd8144 !important;
 }
 .hero {
 	min-height: 100vh; /* Full viewport height */
