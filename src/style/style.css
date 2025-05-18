@@ -1,7 +1,10 @@
+.nav-leuser {
+	background-color: #dd8144;
+}
 .hero {
 	min-height: 100vh; /* Full viewport height */
-	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-		url("../image/hero2.png") no-repeat center center;
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
+		url("../image/backdrop-hero.png") no-repeat center center;
 	background-size: cover;
 	background-attachment: fixed;
 	display: flex;
@@ -11,12 +14,10 @@
 	overflow: hidden;
 }
 
-/* Animasi (Tambahkan library Animate.css) */
 .animate__animated {
 	--animate-duration: 1s;
 }
 
-/* Efek floating untuk gambar */
 @media (min-width: 992px) {
 	.hero img {
 		filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
@@ -38,6 +39,28 @@
 	}
 }
 
+.features {
+	background-image: url('../image/features-parallax.png'); /* ganti dengan path gambar kamu */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+
+.features::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(160, 101, 53, 0.223); /* efek overlay putih transparan */
+	z-index: -1;
+}
+
+
 /* Custom Styles */
 .hover-effect {
 	transition: transform 0.3s, box-shadow 0.3s;
@@ -47,9 +70,79 @@
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
 }
 
-.about{
+.about {
 	min-height: 50vh;
+	background-color: #f8f9fa;
+	padding: 4rem 0;
 }
+
+/* Animation delays */
+.animate__fadeInLeft {
+	animation-delay: 0.3s;
+}
+
+.animate__fadeInRight {
+	animation-delay: 0.5s;
+}
+
+.animate__pulse {
+	animation-duration: 2s;
+}
+
+/* Custom Styles */
+.featuresSwiper {
+	padding: 20px 0 50px;
+}
+
+.swiper-slide {
+	height: auto;
+	padding: 10px;
+}
+
+.hover-effect {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.icon-box {
+	width: 70px;
+	height: 70px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+}
+
+.bg-purple {
+	background-color: #6f42c1;
+}
+
+.text-purple {
+	color: #6f42c1;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	color: #0d6efd;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+	font-size: 1.2rem;
+}
+
+.swiper-pagination-bullet-active {
+	background: #0d6efd;
+}
+
 .icon-box {
 	width: 70px;
 	height: 70px;
@@ -66,6 +159,20 @@
 .text-purple {
 	color: #6f42c1 !important;
 }
+
+.text-jenis {
+	color: #dd8144 !important;
+	transition: all 0.3s ease; /* haluskan perubahan */
+	cursor: pointer;
+}
+
+.text-jenis.active {
+	color: #ffffff !important;
+	background-color: #ff9500;
+	border-radius: 20px;
+	padding: 10px;
+}
+
 /* Custom Card Hover */
 .card {
 	transition: transform 0.3s;
@@ -83,7 +190,7 @@
 
 /* Visa Turis */
 .card:nth-child(1) .card-title {
-	border-color: #007bff;
+	border-color: #ff9500;
 }
 
 /* Visa Bisnis */
@@ -127,6 +234,79 @@
 	justify-content: center;
 	font-weight: bold;
 }
+
+/*  */
+.testimonialSwiper {
+	padding: 20px 0 50px;
+}
+
+.testimoni {
+	background-image: url('../image/testimoni-parallax.png'); /* ganti dengan path gambar kamu */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+
+.testimoni::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(195, 166, 144, 0.286); /* efek overlay putih transparan */
+	z-index: -1;
+}
+
+.swiper-slide {
+	height: auto;
+	padding: 10px;
+}
+
+.card {
+	transition: transform 0.3s ease;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+}
+
+blockquote {
+	font-style: italic;
+	position: relative;
+	padding-left: 20px;
+}
+
+blockquote::before {
+	content: "s";
+	font-family: Georgia, serif;
+	font-size: 3rem;
+	color: rgba(13, 110, 253, 0.1);
+	position: absolute;
+	left: -10px;
+	top: -20px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	color: #0d6efd;
+	width: 10px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+	font-size: 1.2rem;
+}
+
+.swiper-pagination-bullet-active {
+	background: #0d6efd;
+}
+/* end */
 
 .step-icon {
 	font-size: 1.5rem;
@@ -309,4 +489,34 @@ footer a:hover {
 .quick-message:hover {
 	background-color: #25d366;
 	color: white !important;
+}
+
+.accordion-button:not(.collapsed) {
+	color: inherit;
+	background-color: transparent;
+	box-shadow: none;
+}
+
+.accordion-button:focus {
+	box-shadow: none;
+	border-color: transparent;
+}
+
+.accordion-button::after {
+	background-size: 0.8rem;
+	margin-left: 0.5rem;
+}
+
+.card {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-img-top {
+	height: 160px;
+	object-fit: cover;
 }
