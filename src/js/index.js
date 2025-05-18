@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const chatInput = document.getElementById("chatInput");
 	const quickMessages = document.querySelectorAll(".quick-message");
 
-	const whatsappNumber = "6285155447978"; 
+	const whatsappNumber = "6285155447978";
 
 	chatButton.addEventListener("click", function () {
 		chatPopup.classList.toggle("d-none");
@@ -66,25 +66,93 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	sendWhatsApp.addEventListener("click", function () {
 		const message = chatInput.value.trim();
-		if (message) {
-			const encodedMessage = encodeURIComponent(message);
 
-			window.open(
-				`https://wa.me/${whatsappNumber}?text=${encodedMessage}`,
-				"_blank"
-			);
-
-			chatPopup.classList.add("d-none");
-
-			chatInput.value = "";
-		} else {
-			alert("Silakan tulis pesan Anda terlebih dahulu");
+		if (message == "") {
+			const message = "Halo, saya ingin bertanya terkait pembuatan visa";
 		}
+
+		const encodedMessage = encodeURIComponent(message);
+
+		window.open(
+			`https://wa.me/${whatsappNumber}?text=${encodedMessage}`,
+			"_blank"
+		);
+
+		chatPopup.classList.add("d-none");
+
+		chatInput.value = "";
+		// if (message) {
+		// } else {
+		// 	alert("Silakan tulis pesan Anda terlebih dahulu");
+		// }
 	});
 
 	chatButton.addEventListener("click", function () {
 		setTimeout(() => {
 			chatInput.focus();
 		}, 300);
+	});
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+	new Swiper(".featuresSwiper", {
+		slidesPerView: 1,
+		spaceBetween: 20,
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		breakpoints: {
+			576: {
+				slidesPerView: 2,
+			},
+			992: {
+				slidesPerView: 3,
+			},
+		},
+	});
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+	new Swiper(".testimonialSwiper", {
+		slidesPerView: 1,
+		spaceBetween: 20,
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		breakpoints: {
+			768: {
+				slidesPerView: 2,
+			},
+			992: {
+				slidesPerView: 3,
+			},
+		},
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false,
+		},
+	});
+});
+
+document.querySelectorAll(".text-jenis").forEach((item) => {
+	item.addEventListener("click", function () {
+		if (this.classList.contains("active")) {
+			this.classList.remove("active");
+		} else {
+			document
+				.querySelectorAll(".text-jenis")
+				.forEach((el) => el.classList.remove("active"));
+			this.classList.add("active");
+		}
 	});
 });

@@ -9,13 +9,17 @@
 	<link rel="stylesheet" href="src/style/style.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 	<!-- Navbar -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+	<nav class="navbar navbar-expand-lg navbar-light text-light shadow-sm fixed-top nav-leuser navbar-dark">
 		<div class="container">
-			<a class="navbar-brand fw-bold" href="#">Lauser Visa</a>
+			<img src="src/image/logo/leuser_white.png" alt="Visa" class="img-fluid" loading="lazy"
+				style="width: 15%;" />
+			<!-- <a class="navbar-brand fw-bold" href="#">Lauser Visa</a> -->
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -44,7 +48,7 @@
 			<div class="row align-items-center g-4">
 				<div class="col-lg-6 order-lg-2 text-center">
 					<img src="src/image/tourist.png" alt="Visa" class="img-fluid animate__animated animate__fadeIn"
-						loading="lazy" />
+						loading="lazy" style="width: 50%;" />
 				</div>
 
 				<div class="col-lg-6 order-lg-1 text-white">
@@ -69,267 +73,285 @@
 		</div>
 	</section>
 
-	<section id="about" class="pt-5 about">
-		<div class="container justify-content-center justify-align-center border">
+	<section id="about" class="pt-5 about align-content-center">
+		<div class="container">
 			<div class="row align-items-center g-4">
-				<div class="col-lg-6 text-center">
-					<img src="src/image/visa.png" alt="Visa" class="img-fluid" loading="lazy" />
+				<div class="col-lg-6 text-center" data-aos="fade-right" data-aos-duration="1000">
+					<img src="src/image/logo/mokup.jpg" alt="CV. Leuser Visa - Jasa Pembuatan Visa" class="img-fluid"
+						loading="lazy" style="width:70%;" />
 				</div>
-				<div class="col-lg-6">
-					<h2 class="fw-bold mb-3">Lauser Visa</h2>
+				<div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+					<h2 class="fw-bold mb-3 animate__bounceInDown">CV. Leuser Visa</h2>
 					<p class="mb-4">
-						Lauser Visa adalah platform yang memudahkan Anda
-						mengurus visa turis, bisnis, kerja, dan
-						studi ke 50+ negara. Kami menyediakan layanan
-						pembuatan visa dengan proses cepat dan mudah.
+						CV. Leuser Visa adalah biro jasa profesional yang bergerak di bidang pembuatan visa ke berbagai
+						negara di seluruh dunia. Kami melayani berbagai jenis visa seperti visa turis, bisnis, kerja,
+						pelajar, dan lain-lain dengan proses yang mudah, cepat, dan aman.
 					</p>
+					<p class="mb-4">
+						Dengan pengalaman dan tim ahli yang berdedikasi, kami membantu klien dalam menyiapkan seluruh
+						dokumen yang diperlukan, memberikan konsultasi gratis, serta memastikan proses aplikasi visa
+						berjalan lancar hingga tuntas. Kepuasan dan keberhasilan klien menjadi prioritas utama kami.
+					</p>
+					<div class="d-flex gap-3">
+						<a href="#services"
+							class="btn btn-warning text-white animate__animated animate__pulse animate__infinite">Layanan
+							Kami</a>
+						<a href="#contact" class="btn btn-outline-warning">Konsultasi Gratis</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="py-5" id="layanan">
+
+	<section id="features" class="py-5 bg-light features">
 		<div class="container">
-			<h2 class="text-center mb-4">Layanan Kami</h2>
-			<div class="row text-center">
-				<div class="col-md-4 mb-4">
-					<div class="card h-100 p-4 border-0 shadow-sm">
-						<div class="service-icon mb-3">🌏</div>
-						<h5>Visa Wisata</h5>
-						<p>
-							Kami bantu Anda mengurus visa untuk liburan ke
-							luar negeri dengan mudah.
-						</p>
+			<div class="text-center text-light mb-5">
+				<h2 class="fw-bold" data-aos="fade-left" data-aos-duration="1500">Kenapa Memilih Layanan Kami?</h2>
+				<p data-aos="fade-right" data-aos-duration="1500">Keunggulan yang membuat proses pembuatan visa lebih
+					efisien.</p>
+			</div>
+
+			<!-- Swiper Container -->
+			<div class="swiper featuresSwiper">
+				<div class="swiper-wrapper">
+					<!-- Feature 1 -->
+					<div class="swiper-slide" data-aos="fade-up" data-aos-duration="1500">
+						<div class="card h-100 border-0 shadow-sm hover-effect">
+							<div class="card-body text-center p-4">
+								<div class="icon-box bg-primary bg-opacity-10 text-primary mb-4">
+									<i class="fas fa-bolt fa-2x"></i>
+								</div>
+								<h5 class="fw-bold">Proses Cepat</h5>
+								<p class="text-muted">Visa siap dalam 1-3 hari kerja dengan tim profesional kami.</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Feature 2 -->
+					<div class="swiper-slide" data-aos="fade-down" data-aos-duration="1500">
+						<div class="card h-100 border-0 shadow-sm hover-effect">
+							<div class="card-body text-center p-4">
+								<div class="icon-box bg-success bg-opacity-10 text-success mb-4">
+									<i class="fas fa-users fa-2x"></i>
+								</div>
+								<h5 class="fw-bold">Tim Berpengalaman</h5>
+								<p class="text-muted">Dikelola oleh ahli visa dengan pengalaman 10+ tahun.</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Feature 3 -->
+					<div class="swiper-slide" data-aos="fade-up" data-aos-duration="1500">
+						<div class="card h-100 border-0 shadow-sm hover-effect">
+							<div class="card-body text-center p-4">
+								<div class="icon-box bg-warning bg-opacity-10 text-warning mb-4">
+									<i class="fas fa-hand-holding-usd fa-2x"></i>
+								</div>
+								<h5 class="fw-bold">Garansi Uang Kembali</h5>
+								<p class="text-muted">Jika visa ditolak, kami refund sesuai ketentuan.</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Feature 4 -->
+					<div class="swiper-slide" data-aos="fade-down" data-aos-duration="1500">
+						<div class="card h-100 border-0 shadow-sm hover-effect">
+							<div class="card-body text-center p-4">
+								<div class="icon-box bg-info bg-opacity-10 text-info mb-4">
+									<i class="fas fa-headset fa-2x"></i>
+								</div>
+								<h5 class="fw-bold">Konsultasi 24 Jam</h5>
+								<p class="text-muted">Dukungan via WhatsApp/Email kapan saja.</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Feature 5 -->
+					<div class="swiper-slide" data-aos="fade-up" data-aos-duration="1500">
+						<div class="card h-100 border-0 shadow-sm hover-effect">
+							<div class="card-body text-center p-4">
+								<div class="icon-box bg-danger bg-opacity-10 text-danger mb-4">
+									<i class="fas fa-receipt fa-2x"></i>
+								</div>
+								<h5 class="fw-bold">Biaya Transparan</h5>
+								<p class="text-muted">Tidak ada biaya tersembunyi, harga jelas dari awal.</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Feature 6 -->
+					<div class="swiper-slide" data-aos="fade-down" data-aos-duration="1500">
+						<div class="card h-100 border-0 shadow-sm hover-effect">
+							<div class="card-body text-center p-4">
+								<div class="icon-box bg-purple bg-opacity-10 text-purple mb-4">
+									<i class="fas fa-globe fa-2x"></i>
+								</div>
+								<h5 class="fw-bold">50+ Negara</h5>
+								<p class="text-muted">Jangkauan luas: Asia, Eropa, Amerika, dll.</p>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-md-4 mb-4">
-					<div class="card h-100 p-4 border-0 shadow-sm">
-						<div class="service-icon mb-3">💼</div>
-						<h5>Visa Bisnis</h5>
-						<p>
-							Butuh visa bisnis? Tim kami siap mendampingi
-							proses dari awal hingga akhir.
-						</p>
-					</div>
-				</div>
-				<div class="col-md-4 mb-4">
-					<div class="card h-100 p-4 border-0 shadow-sm">
-						<div class="service-icon mb-3">🎓</div>
-						<h5>Visa Pelajar</h5>
-						<p>
-							Dapatkan visa belajar ke negara impian Anda
-							dengan bantuan kami.
-						</p>
-					</div>
-				</div>
+
+				<!-- Add Pagination -->
+				<div class="swiper-pagination mt-4"></div>
+
+				<!-- Add Navigation -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
 			</div>
 		</div>
 	</section>
 
-	<section id="features" class="py-5 bg-light">
-		<div class="container">
-			<div class="text-center mb-5">
-				<h2 class="fw-bold">Kenapa Memilih Layanan Kami?</h2>
-				<p class="text-muted">Keunggulan yang membuat proses pembuatan visa lebih efisien.</p>
-			</div>
-
-			<div class="row g-4">
-				<div class="col-md-6 col-lg-4">
-					<div class="card h-100 border-0 shadow-sm hover-effect">
-						<div class="card-body text-center p-4">
-							<div class="icon-box bg-primary bg-opacity-10 text-primary mb-4">
-								<i class="fas fa-bolt fa-2x"></i>
-							</div>
-							<h5 class="fw-bold">Proses Cepat</h5>
-							<p class="text-muted">Visa siap dalam 1-3 hari kerja dengan tim profesional kami.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-lg-4">
-					<div class="card h-100 border-0 shadow-sm hover-effect">
-						<div class="card-body text-center p-4">
-							<div class="icon-box bg-success bg-opacity-10 text-success mb-4">
-								<i class="fas fa-users fa-2x"></i>
-							</div>
-							<h5 class="fw-bold">Tim Berpengalaman</h5>
-							<p class="text-muted">Dikelola oleh ahli visa dengan pengalaman 10+ tahun.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-lg-4">
-					<div class="card h-100 border-0 shadow-sm hover-effect">
-						<div class="card-body text-center p-4">
-							<div class="icon-box bg-warning bg-opacity-10 text-warning mb-4">
-								<i class="fas fa-hand-holding-usd fa-2x"></i>
-							</div>
-							<h5 class="fw-bold">Garansi Uang Kembali</h5>
-							<p class="text-muted">Jika visa ditolak, kami refund sesuai ketentuan.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-lg-4">
-					<div class="card h-100 border-0 shadow-sm hover-effect">
-						<div class="card-body text-center p-4">
-							<div class="icon-box bg-info bg-opacity-10 text-info mb-4">
-								<i class="fas fa-headset fa-2x"></i>
-							</div>
-							<h5 class="fw-bold">Konsultasi 24 Jam</h5>
-							<p class="text-muted">Dukungan via WhatsApp/Email kapan saja.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-lg-4">
-					<div class="card h-100 border-0 shadow-sm hover-effect">
-						<div class="card-body text-center p-4">
-							<div class="icon-box bg-danger bg-opacity-10 text-danger mb-4">
-								<i class="fas fa-receipt fa-2x"></i>
-							</div>
-							<h5 class="fw-bold">Biaya Transparan</h5>
-							<p class="text-muted">Tidak ada biaya tersembunyi, harga jelas dari awal.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-lg-4">
-					<div class="card h-100 border-0 shadow-sm hover-effect">
-						<div class="card-body text-center p-4">
-							<div class="icon-box bg-purple bg-opacity-10 text-purple mb-4">
-								<i class="fas fa-globe fa-2x"></i>
-							</div>
-							<h5 class="fw-bold">50+ Negara</h5>
-							<p class="text-muted">Jangkauan luas: Asia, Eropa, Amerika, dll.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="visa-types" class="py-5">
+	<section id="visa-types" class="py-5 bg-light">
 		<div class="container">
 			<div class="text-center mb-5">
-				<h2 class="fw-bold">Jenis Visa yang Kami Proses</h2>
-				<p class="text-muted">Layanan lengkap untuk berbagai keperluan visa.</p>
+				<h2 class="fw-bold display-6" data-aos="fade-left" data-aos-duration="1500">Jenis Visa yang Kami Proses
+				</h2>
+				<p class="text-muted" data-aos="fade-right" data-aos-duration="1500">Kami melayani pengurusan visa untuk
+					berbagai keperluan perjalanan Anda.</p>
 			</div>
 
 			<div class="row g-4">
 				<!-- Visa Turis -->
-				<div class="col-md-6 col-lg-3">
-					<div class="card h-100 border-0 shadow-sm">
+				<div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000">
+					<div class="card border-0 shadow-sm rounded-4 overflow-hidden">
 						<img src="/src/image/visa-tourist.png" class="card-img-top" alt="Visa Turis" loading="lazy">
 						<div class="card-body">
-							<h5 class="card-title fw-bold">Visa Turis</h5>
-							<p class="card-text text-muted">Untuk perjalanan liburan atau kunjungan keluarga.</p>
+							<h5 class="card-title fw-semibold mb-2">Visa Turis</h5>
+							<p class="text-muted small mb-4">Untuk perjalanan liburan atau kunjungan keluarga.</p>
 
-							<!-- Persyaratan (Collapse) -->
-							<div class="mb-3">
-								<button class="btn btn-sm btn-outline-primary w-100" type="button"
-									data-bs-toggle="collapse" data-bs-target="#turisRequirements">
-									Detail Persyaratan
-								</button>
-								<div class="collapse mt-2" id="turisRequirements">
-									<ul class="text-start small">
-										<li>Paspor minimal 6 bulan</li>
-										<li>Bukti tiket pulang</li>
-										<li>Bukti akomodasi (hotel/undangan)</li>
-										<li>Rekening bank 3 bulan terakhir</li>
-										<li>Foto 4x6 latar putih</li>
-									</ul>
+							<div class="accordion accordion-flush" id="accordionTuris">
+								<div class="accordion-item border-0">
+									<h2 class="accordion-header">
+										<button class="accordion-button collapsed p-0 bg-white" type="button"
+											data-bs-toggle="collapse" data-bs-target="#turisRequirements">
+											<span class="text-jenis fw-medium">Lihat Persyaratan</span>
+										</button>
+									</h2>
+									<div id="turisRequirements" class="accordion-collapse collapse"
+										data-bs-parent="#accordionTuris">
+										<div class="accordion-body px-0 pt-3 pb-0">
+											<ul class="list-group list-group-flush small">
+												<li class="list-group-item border-0 px-0 py-1">Paspor minimal 6 bulan
+												</li>
+												<li class="list-group-item border-0 px-0 py-1">Bukti tiket pulang</li>
+												<li class="list-group-item border-0 px-0 py-1">Bukti akomodasi</li>
+												<li class="list-group-item border-0 px-0 py-1">Rekening 3 bulan terakhir
+												</li>
+												<li class="list-group-item border-0 px-0 py-1">Foto 4x6 latar putih</li>
+											</ul>
+										</div>
+									</div>
 								</div>
 							</div>
-
-							<a href="#kontak" class="btn btn-primary w-100">Ajukan Sekarang</a>
 						</div>
 					</div>
 				</div>
 
 				<!-- Visa Bisnis -->
-				<div class="col-md-6 col-lg-3">
-					<div class="card h-100 border-0 shadow-sm">
-						<img src="src/image/visa-buisness.png" class="card-img-top" alt="Visa Bisnis" loading="lazy">
+				<div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000">
+					<div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+						<img src="/src/image/visa-buisness.png" class="card-img-top" alt="Visa Bisnis" loading="lazy">
 						<div class="card-body">
-							<h5 class="card-title fw-bold">Visa Bisnis</h5>
-							<p class="card-text text-muted">Untuk meeting, negosiasi, atau pelatihan.</p>
+							<h5 class="card-title fw-semibold mb-2">Visa Bisnis</h5>
+							<p class="text-muted small mb-4">Untuk meeting, negosiasi, atau pelatihan.</p>
 
-							<div class="mb-3">
-								<button class="btn btn-sm btn-outline-success w-100" type="button"
-									data-bs-toggle="collapse" data-bs-target="#bisnisRequirements">
-									Detail Persyaratan
-								</button>
-								<div class="collapse mt-2" id="bisnisRequirements">
-									<ul class="text-start small">
-										<li>Surat undangan dari perusahaan di Indonesia</li>
-										<li>CV/Portofolio pemohon</li>
-										<li>Akta perusahaan (jika self-sponsored)</li>
-										<li>Paspor minimal 6 bulan</li>
-										<li>Bukti keuangan perusahaan</li>
-									</ul>
+							<div class="accordion accordion-flush" id="accordionBisnis">
+								<div class="accordion-item border-0">
+									<h2 class="accordion-header">
+										<button class="accordion-button collapsed p-0 bg-white" type="button"
+											data-bs-toggle="collapse" data-bs-target="#bisnisRequirements">
+											<span class="text-jenis fw-medium">Lihat Persyaratan</span>
+										</button>
+									</h2>
+									<div id="bisnisRequirements" class="accordion-collapse collapse"
+										data-bs-parent="#accordionBisnis">
+										<div class="accordion-body px-0 pt-3 pb-0">
+											<ul class="list-group list-group-flush small">
+												<li class="list-group-item border-0 px-0 py-1">Surat undangan perusahaan
+												</li>
+												<li class="list-group-item border-0 px-0 py-1">CV/Portofolio</li>
+												<li class="list-group-item border-0 px-0 py-1">Akta perusahaan</li>
+												<li class="list-group-item border-0 px-0 py-1">Paspor aktif</li>
+												<li class="list-group-item border-0 px-0 py-1">Bukti keuangan</li>
+											</ul>
+										</div>
+									</div>
 								</div>
 							</div>
-
-							<a href="#kontak" class="btn btn-success w-100">Ajukan Sekarang</a>
 						</div>
 					</div>
 				</div>
 
 				<!-- Visa Pelajar -->
-				<div class="col-md-6 col-lg-3">
-					<div class="card h-100 border-0 shadow-sm">
-						<img src="src/image/visa-student.png" class="card-img-top" alt="Visa Pelajar" loading="lazy">
+				<div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000">
+					<div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+						<img src="/src/image/visa-student.png" class="card-img-top" alt="Visa Pelajar" loading="lazy">
 						<div class="card-body">
-							<h5 class="card-title fw-bold">Visa Pelajar</h5>
-							<p class="card-text text-muted">Untuk studi di luar negeri.</p>
+							<h5 class="card-title fw-semibold mb-2">Visa Pelajar</h5>
+							<p class="text-muted small mb-4">Untuk studi di luar negeri.</p>
 
-							<div class="mb-3">
-								<button class="btn btn-sm btn-outline-warning w-100" type="button"
-									data-bs-toggle="collapse" data-bs-target="#pelajarRequirements">
-									Detail Persyaratan
-								</button>
-								<div class="collapse mt-2" id="pelajarRequirements">
-									<ul class="text-start small">
-										<li>Surat penerimaan dari institusi pendidikan</li>
-										<li>Bukti pembayaran tuition fee</li>
-										<li>Ijazah dan transkrip (terjemahan)</li>
-										<li>Sponsorship letter (jika dibiayai orang tua)</li>
-										<li>Medical check-up</li>
-									</ul>
+							<div class="accordion accordion-flush" id="accordionPelajar">
+								<div class="accordion-item border-0">
+									<h2 class="accordion-header">
+										<button class="accordion-button collapsed p-0 bg-white" type="button"
+											data-bs-toggle="collapse" data-bs-target="#pelajarRequirements">
+											<span class="text-jenis fw-medium">Lihat Persyaratan</span>
+										</button>
+									</h2>
+									<div id="pelajarRequirements" class="accordion-collapse collapse"
+										data-bs-parent="#accordionPelajar">
+										<div class="accordion-body px-0 pt-3 pb-0">
+											<ul class="list-group list-group-flush small">
+												<li class="list-group-item border-0 px-0 py-1">Surat penerimaan kampus
+												</li>
+												<li class="list-group-item border-0 px-0 py-1">Bukti pembayaran tuition
+												</li>
+												<li class="list-group-item border-0 px-0 py-1">Ijazah & transkrip</li>
+												<li class="list-group-item border-0 px-0 py-1">Surat sponsor</li>
+												<li class="list-group-item border-0 px-0 py-1">Medical check-up</li>
+											</ul>
+										</div>
+									</div>
 								</div>
 							</div>
-
-							<a href="#kontak" class="btn btn-warning w-100">Ajukan Sekarang</a>
 						</div>
 					</div>
 				</div>
 
 				<!-- Visa Kerja -->
-				<div class="col-md-6 col-lg-3">
-					<div class="card h-100 border-0 shadow-sm">
-						<img src="src/image/visa-work.png" class="card-img-top" alt="Visa Kerja" loading="lazy">
+				<div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000">
+					<div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+						<img src="/src/image/visa-work.png" class="card-img-top" alt="Visa Kerja" loading="lazy">
 						<div class="card-body">
-							<h5 class="card-title fw-bold">Visa Kerja</h5>
-							<p class="card-text text-muted">Untuk bekerja di luar negeri.</p>
+							<h5 class="card-title fw-semibold mb-2">Visa Kerja</h5>
+							<p class="text-muted small mb-4">Untuk bekerja secara legal di luar negeri.</p>
 
-							<div class="mb-3">
-								<button class="btn btn-sm btn-outline-danger w-100" type="button"
-									data-bs-toggle="collapse" data-bs-target="#kerjaRequirements">
-									Detail Persyaratan
-								</button>
-								<div class="collapse mt-2" id="kerjaRequirements">
-									<ul class="text-start small">
-										<li>Surat kontrak kerja dari perusahaan</li>
-										<li>VITAS (Visa Limited Stay) dari imigrasi</li>
-										<li>SKTT (Surat Keterangan Tempat Tinggal)</li>
-										<li>Sertifikat keahlian (jika diperlukan)</li>
-										<li>Medical check-up dan asuransi</li>
-									</ul>
+							<div class="accordion accordion-flush" id="accordionKerja">
+								<div class="accordion-item border-0">
+									<h2 class="accordion-header">
+										<button class="accordion-button collapsed p-0 bg-white" type="button"
+											data-bs-toggle="collapse" data-bs-target="#kerjaRequirements">
+											<span class="text-jenis fw-medium">Lihat Persyaratan</span>
+										</button>
+									</h2>
+									<div id="kerjaRequirements" class="accordion-collapse collapse"
+										data-bs-parent="#accordionKerja">
+										<div class="accordion-body px-0 pt-3 pb-0">
+											<ul class="list-group list-group-flush small">
+												<li class="list-group-item border-0 px-0 py-1">Kontrak kerja resmi</li>
+												<li class="list-group-item border-0 px-0 py-1">Dokumen VITAS</li>
+												<li class="list-group-item border-0 px-0 py-1">SKTT</li>
+												<li class="list-group-item border-0 px-0 py-1">Sertifikat keahlian</li>
+												<li class="list-group-item border-0 px-0 py-1">Asuransi & medical
+													check-up</li>
+											</ul>
+										</div>
+									</div>
 								</div>
 							</div>
-
-							<a href="#kontak" class="btn btn-danger w-100">Ajukan Sekarang</a>
 						</div>
 					</div>
 				</div>
@@ -337,6 +359,159 @@
 		</div>
 	</section>
 
+	<!-- Testimoni -->
+	<section class="bg-light py-5 testimoni" id="testimoni">
+		<div class="container">
+			<div class="text-center mb-5 text-light" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+				<h2 class="fw-bold">Apa Kata Klien Kami</h2>
+				<p>Testimoni jujur dari pelanggan yang puas dengan layanan kami</p>
+			</div>
+
+			<!-- Swiper Container -->
+			<div class="swiper testimonialSwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" data-aos-duration="1500" data-aos="fade-up">
+						<div class="card border-0 shadow-sm h-100">
+							<div class="card-body p-4">
+								<div class="d-flex align-items-center mb-3">
+									<div>
+										<h5 class="mb-0 fw-bold">Ayu</h5>
+										<div class="text-warning small">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+										</div>
+									</div>
+								</div>
+								<blockquote class="mb-0">
+									"Pelayanan sangat cepat dan ramah. Visa saya ke Jepang beres tanpa ribet! Prosesnya
+									hanya 2 hari kerja. Tim Leuser sangat profesional dan responsif."
+								</blockquote>
+								<div class="mt-3 text-muted small">
+									<i class="fas fa-map-marker-alt me-1"></i> Jakarta • Visa Turis Jepang
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide" data-aos-duration="1500" data-aos="fade-down">
+						<div class="card border-0 shadow-sm h-100">
+							<div class="card-body p-4">
+								<div class="d-flex align-items-center mb-3">
+									<div>
+										<h5 class="mb-0 fw-bold">Rudi</h5>
+										<div class="text-warning small">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+										</div>
+									</div>
+								</div>
+								<blockquote class="mb-0">
+									"Dari awal konsultasi sampai visa keluar, saya merasa dibantu sepenuh hati. Bahkan
+									saat ada kendala dokumen, mereka membantu sampai tuntas. Recommended banget!"
+								</blockquote>
+								<div class="mt-3 text-muted small">
+									<i class="fas fa-map-marker-alt me-1"></i> Surabaya • Visa Bisnis Singapura
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide" data-aos-duration="1500" data-aos="fade-up">
+						<div class="card border-0 shadow-sm h-100">
+							<div class="card-body p-4">
+								<div class="d-flex align-items-center mb-3">
+									<div>
+										<h5 class="mb-0 fw-bold">Dewi</h5>
+										<div class="text-warning small">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star-half-alt"></i>
+										</div>
+									</div>
+								</div>
+								<blockquote class="mb-0">
+									"Pengurusan visa studi ke Jerman lebih mudah dengan Leuser. Mereka membantu dari
+									persiapan dokumen sampai simulasi wawancara. Visa approved dalam 1 minggu!"
+								</blockquote>
+								<div class="mt-3 text-muted small">
+									<i class="fas fa-map-marker-alt me-1"></i> Bandung • Visa Pelajar Jerman
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide" data-aos-duration="1500" data-aos="fade-down">
+						<div class="card border-0 shadow-sm h-100">
+							<div class="card-body p-4">
+								<div class="d-flex align-items-center mb-3">
+									<div>
+										<h5 class="mb-0 fw-bold">Budi</h5>
+										<div class="text-warning small">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+										</div>
+									</div>
+								</div>
+								<blockquote class="mb-0">
+									"Awalnya ragu karena harga lebih murah dari agen lain, tapi ternyata pelayanan
+									sangat memuaskan. Visa kerja Korea saya selesai tepat waktu tanpa masalah."
+								</blockquote>
+								<div class="mt-3 text-muted small">
+									<i class="fas fa-map-marker-alt me-1"></i> Medan • Visa Kerja Korea
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide" data-aos-duration="1500" data-aos="fade-up">
+						<div class="card border-0 shadow-sm h-100">
+							<div class="card-body p-4">
+								<div class="d-flex align-items-center mb-3">
+									<div>
+										<h5 class="mb-0 fw-bold">Siti</h5>
+										<div class="text-warning small">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+										</div>
+									</div>
+								</div>
+								<blockquote class="mb-0">
+									"Pengalaman pertama urus visa sendiri dan berhasil! Terima kasih Leuser untuk
+									panduan lengkapnya. Visa turis Australia saya approved dalam 3 hari kerja."
+								</blockquote>
+								<div class="mt-3 text-muted small">
+									<i class="fas fa-map-marker-alt me-1"></i> Yogyakarta • Visa Turis Australia
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Add Pagination -->
+				<div class="swiper-pagination mt-4"></div>
+
+				<!-- Add Navigation -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- proses -->
 	<section id="visa-process" class="py-5 bg-light">
 		<div class="container">
 			<div class="text-center mb-5 animate__animated animate__fadeInDown">
@@ -422,12 +597,10 @@
 				</div>
 			</div>
 
-			<!-- Mobile Timeline (Vertical) -->
 			<div class="d-lg-none">
 				<div class="row justify-content-center">
 					<div class="col-md-8">
 						<div class="timeline-vertical">
-							<!-- Step 1 -->
 							<div class="timeline-step animate__animated">
 								<div class="timeline-icon bg-primary text-white">
 									<span>1</span>
@@ -439,7 +612,6 @@
 								</div>
 							</div>
 
-							<!-- Step 2 -->
 							<div class="timeline-step animate__animated">
 								<div class="timeline-icon bg-success text-white">
 									<span>2</span>
@@ -451,7 +623,6 @@
 								</div>
 							</div>
 
-							<!-- Step 3 -->
 							<div class="timeline-step animate__animated">
 								<div class="timeline-icon bg-warning text-white">
 									<span>3</span>
@@ -463,7 +634,6 @@
 								</div>
 							</div>
 
-							<!-- Step 4 -->
 							<div class="timeline-step animate__animated">
 								<div class="timeline-icon bg-danger text-white">
 									<span>4</span>
@@ -479,61 +649,20 @@
 				</div>
 			</div>
 
-			<!-- CTA Button -->
 			<div class="text-center mt-5 animate__animated animate__fadeInUp">
-				<a href="#contact" class="btn btn-primary btn-lg px-5 shadow">
+				<button id="chatButton" class="btn btn-outline-warning btn-lg px-5 shadow">
 					<i class="fas fa-paper-plane me-2"></i> Mulai Proses Sekarang
-				</a>
+				</button>
 			</div>
-		</div>
-	</section>
-
-	<!-- Testimoni -->
-	<section class="bg-light py-5" id="testimoni">
-		<div class="container">
-			<h2 class="text-center mb-4">Apa Kata Klien Kami</h2>
-			<div class="row">
-				<div class="col-md-6">
-					<blockquote class="blockquote testimonial">
-						"Pelayanan sangat cepat dan ramah. Visa saya ke
-						Jepang beres tanpa ribet!"
-						<footer class="blockquote-footer mt-2">
-							Ayu, Jakarta
-						</footer>
-					</blockquote>
-				</div>
-				<div class="col-md-6">
-					<blockquote class="blockquote testimonial">
-						"Dari awal konsultasi sampai visa keluar, saya
-						merasa dibantu sepenuh hati."
-						<footer class="blockquote-footer mt-2">
-							Rudi, Surabaya
-						</footer>
-					</blockquote>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Call to Action -->
-	<section class="text-center py-5 bg-primary text-white" id="kontak">
-		<div class="container">
-			<h2 class="mb-3">Siap Membantu Anda!</h2>
-			<p class="lead">
-				Hubungi kami sekarang untuk konsultasi gratis.
-			</p>
-			<a href="mailto:info@Lauser Visa" class="btn btn-light btn-lg mt-2">Kirim Email</a>
 		</div>
 	</section>
 
 	<!-- Floating WhatsApp Button -->
 	<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1000;">
-		<!-- Main Button -->
 		<button id="chatButton" class="btn btn-success rounded-circle shadow-lg" style="width: 60px; height: 60px;">
 			<i class="fab fa-whatsapp fs-4"></i>
 		</button>
 
-		<!-- Chat Popup (Hidden by default) -->
 		<div id="chatPopup" class="card shadow-lg d-none"
 			style="width: 350px; position: absolute; bottom: 70px; right: 0;">
 			<div class="card-header bg-success text-white d-flex justify-content-between align-items-center">
@@ -545,7 +674,6 @@
 				</button>
 			</div>
 			<div class="card-body bg-light" style="height: 200px; overflow-y: auto;">
-				<!-- Predefined Messages -->
 				<div class="mb-3">
 					<p class="small text-muted">Pilih pertanyaan cepat:</p>
 					<button class="btn btn-outline-success btn-sm quick-message mb-2"
@@ -562,7 +690,6 @@
 					</button>
 				</div>
 
-				<!-- Chat Input -->
 				<div class="mt-4">
 					<textarea id="chatInput" class="form-control mb-2" rows="3"
 						placeholder="Tulis pesan Anda..."></textarea>
@@ -586,7 +713,8 @@
 				<!-- Kolom 1: Tentang Kami -->
 				<div class="col-lg-4 col-md-6 mb-4">
 					<h5 class="fw-bold mb-4 text-warning">
-						<i class="fas fa-passport me-2"></i>VisaPro
+						<i class="fas fa-passport me-2"></i>
+						Leuser Visa
 					</h5>
 					<p class="small">
 						Layanan profesional pengurusan visa sejak 2010. Kami membantu ribuan klien mendapatkan visa ke
@@ -600,7 +728,6 @@
 					</div>
 				</div>
 
-				<!-- Kolom 2: Link Cepat -->
 				<div class="col-lg-2 col-md-6 mb-4">
 					<h5 class="fw-bold mb-4">Link Cepat</h5>
 					<ul class="list-unstyled">
@@ -612,13 +739,20 @@
 					</ul>
 				</div>
 
-				<!-- Kolom 3: Kontak -->
 				<div class="col-lg-3 col-md-6 mb-4">
 					<h5 class="fw-bold mb-4">Hubungi Kami</h5>
+					<div class="mt-4 ratio ratio-16x9">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1836.1640930457133!2d106.92248514791389!3d-6.208072166779604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%20Jl.%20Swadaya%20Pam%20No.32%20RT.006%20RW.007!5e0!3m2!1sid!2sid!4v1747560305778!5m2!1sid!2sid"
+							width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
 					<ul class="list-unstyled small">
 						<li class="mb-3">
 							<i class="fas fa-map-marker-alt text-warning me-2"></i>
-							Jl. Sudirman No. 123, Jakarta Selatan
+							Jl. Swadaya Pam No.32 RT.006 RW.007<br>
+							Kel. Jatinegara, Kec. Cakung<br>
+							Jakarta Timur 13930
 						</li>
 						<li class="mb-3">
 							<i class="fas fa-phone-alt text-warning me-2"></i>
@@ -626,7 +760,8 @@
 						</li>
 						<li class="mb-3">
 							<i class="fas fa-envelope text-warning me-2"></i>
-							info@visapro.co.id
+							info@
+							Leuser Visa.co.id
 						</li>
 						<li class="mb-3">
 							<i class="fas fa-clock text-warning me-2"></i>
@@ -646,19 +781,19 @@
 					</ul>
 
 					<!-- Payment Methods -->
-					<!-- <div class="mt-4">
+					<div class="mt-4">
 						<h6 class="fw-bold mb-2">Pembayaran:</h6>
-						<div class="d-flex gap-2">
-							<img src="https://via.placeholder.com/40/fff/000?text=BCA" alt="BCA"
-								class="img-fluid bg-white p-1 rounded">
-							<img src="https://via.placeholder.com/40/fff/000?text=Mandiri" alt="Mandiri"
-								class="img-fluid bg-white p-1 rounded">
-							<img src="https://via.placeholder.com/40/fff/000?text=BRI" alt="BRI"
-								class="img-fluid bg-white p-1 rounded">
-							<img src="https://via.placeholder.com/40/fff/000?text=OVO" alt="OVO"
-								class="img-fluid bg-white p-1 rounded">
+						<div class="d-flex flex-wrap gap-2">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Bank_Central_Asia.svg"
+								alt="BCA" class="img-fluid bg-white p-1 rounded" style="height: 25px;">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Logo_Bank_Mandiri.svg"
+								alt="Mandiri" class="img-fluid bg-white p-1 rounded" style="height: 25px;">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/BRI_2020.svg" alt="BRI"
+								class="img-fluid bg-white p-1 rounded" style="height: 25px;">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Logo_ovo_purple.svg" alt="OVO"
+								class="img-fluid bg-white p-1 rounded" style="height: 25px;">
 						</div>
-					</div> -->
+					</div>
 				</div>
 			</div>
 
@@ -667,11 +802,12 @@
 			<!-- Copyright -->
 			<div class="row align-items-center">
 				<div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-					<p class="small mb-0">&copy; 2023 VisaPro. All rights reserved.</p>
+					<p class="small mb-0">&copy; 2023
+						Lauser Visa. All rights reserved.</p>
 				</div>
 				<div class="col-md-6 text-center text-md-end">
 					<p class="small mb-0">
-						Designed with TKJ
+						Designed with <i class="fas fa-heart text-danger"></i> by TKJ
 					</p>
 				</div>
 			</div>
@@ -680,7 +816,12 @@
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<script src="src/js/index.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
 
 </html>
