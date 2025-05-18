@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 document.addEventListener("DOMContentLoaded", function () {
 	const chatButton = document.getElementById("chatButton");
+	const chatButtonChat = document.getElementById("chatButtonChat");
 	const chatPopup = document.getElementById("chatPopup");
 	const closeChat = document.getElementById("closeChat");
 	const sendWhatsApp = document.getElementById("sendWhatsApp");
@@ -51,6 +52,10 @@ document.addEventListener("DOMContentLoaded", function () {
 	const whatsappNumber = "6285155447978";
 
 	chatButton.addEventListener("click", function () {
+		chatPopup.classList.toggle("d-none");
+	});
+	
+	chatButtonChat.addEventListener("click", function () {
 		chatPopup.classList.toggle("d-none");
 	});
 
@@ -81,10 +86,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		chatPopup.classList.add("d-none");
 
 		chatInput.value = "";
-		// if (message) {
-		// } else {
-		// 	alert("Silakan tulis pesan Anda terlebih dahulu");
-		// }
 	});
 
 	chatButton.addEventListener("click", function () {
