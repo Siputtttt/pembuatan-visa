@@ -1,24 +1,312 @@
 .hero {
-    background: url("../image/hero.jpg") no-repeat center center;
-    background-size: cover;
-    color: white;
-    padding: 100px 20px;
-    text-align: center;
+	min-height: 100vh; /* Full viewport height */
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url("../image/hero2.png") no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+	align-items: center;
+	padding: 80px 0;
+	position: relative;
+	overflow: hidden;
 }
-.hero h1 {
-    font-size: 3rem;
-    font-weight: bold;
+
+/* Animasi (Tambahkan library Animate.css) */
+.animate__animated {
+	--animate-duration: 1s;
 }
-.service-icon {
-    font-size: 40px;
-    color: #0d6efd;
+
+/* Efek floating untuk gambar */
+@media (min-width: 992px) {
+	.hero img {
+		filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+		transition: transform 0.5s;
+	}
+	.hero img:hover {
+		transform: translateY(-10px);
+	}
 }
-.testimonial {
-    font-style: italic;
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+	.hero {
+		text-align: center;
+		background-attachment: scroll; /* Non-fixed untuk mobile */
+	}
+	.hero .d-flex {
+		justify-content: center;
+	}
 }
-footer {
-    background-color: #f8f9fa;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 14px;
+
+/* Custom Styles */
+.hover-effect {
+	transition: transform 0.3s, box-shadow 0.3s;
+}
+.hover-effect:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.about{
+	min-height: 50vh;
+}
+.icon-box {
+	width: 70px;
+	height: 70px;
+	margin: 0 auto;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bg-purple {
+	background-color: #6f42c1 !important;
+}
+.text-purple {
+	color: #6f42c1 !important;
+}
+/* Custom Card Hover */
+.card {
+	transition: transform 0.3s;
+}
+.card:hover {
+	transform: translateY(-5px);
+}
+
+/* Warna Border Bawah Card */
+.card-title {
+	border-bottom: 2px solid;
+	padding-bottom: 8px;
+	display: inline-block;
+}
+
+/* Visa Turis */
+.card:nth-child(1) .card-title {
+	border-color: #007bff;
+}
+
+/* Visa Bisnis */
+.card:nth-child(2) .card-title {
+	border-color: #28a745;
+}
+
+/* Visa Pelajar */
+.card:nth-child(3) .card-title {
+	border-color: #ffc107;
+}
+
+/* Visa Kerja */
+.card:nth-child(4) .card-title {
+	border-color: #dc3545;
+}
+/* Timeline Styles */
+/* Horizontal Timeline */
+.icon-step {
+	width: 80px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.step-number {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	background: #fff;
+	color: var(--bs-primary);
+	border: 2px solid currentColor;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+}
+
+.step-icon {
+	font-size: 1.5rem;
+}
+
+.progress-step {
+	width: calc(100% - 80px);
+	height: 4px;
+}
+
+.progress-bar {
+	height: 100%;
+	width: 100%;
+}
+
+/* Vertical Timeline */
+.timeline-vertical {
+	position: relative;
+	padding-left: 50px;
+}
+
+.timeline-vertical::before {
+	content: "";
+	position: absolute;
+	left: 25px;
+	top: 0;
+	bottom: 0;
+	width: 2px;
+	background: linear-gradient(
+		to bottom,
+		var(--bs-primary),
+		var(--bs-success),
+		var(--bs-warning),
+		var(--bs-danger)
+	);
+}
+
+.timeline-step {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.timeline-icon {
+	position: absolute;
+	left: -50px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content {
+	background: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+	.icon-step {
+		width: 60px;
+		height: 60px;
+	}
+
+	.step-icon {
+		font-size: 1.2rem;
+	}
+}
+
+/* section visa proses */
+/* Animasi Timeline */
+.process-step:nth-child(1) .card {
+	animation-delay: 0.3s;
+}
+.process-step:nth-child(2) .card {
+	animation-delay: 0.6s;
+}
+.process-step:nth-child(3) .card {
+	animation-delay: 0.9s;
+}
+.process-step:nth-child(4) .card {
+	animation-delay: 1.2s;
+}
+
+.timeline-vertical .timeline-step:nth-child(1) {
+	animation-delay: 0.3s;
+}
+.timeline-vertical .timeline-step:nth-child(2) {
+	animation-delay: 0.6s;
+}
+.timeline-vertical .timeline-step:nth-child(3) {
+	animation-delay: 0.9s;
+}
+.timeline-vertical .timeline-step:nth-child(4) {
+	animation-delay: 1.2s;
+}
+
+/* Efek hover tambahan */
+.icon-step,
+.timeline-icon {
+	transition: transform 0.3s, box-shadow 0.3s;
+}
+.icon-step:hover,
+.timeline-icon:hover {
+	transform: scale(1.1);
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer Styles */
+footer a {
+	transition: all 0.3s ease;
+}
+
+footer a:hover {
+	color: #ffc107 !important;
+	padding-left: 5px;
+}
+
+.social-media a {
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+	transition: all 0.3s ease;
+}
+
+.social-media a:hover {
+	background: #ffc107;
+	color: #000 !important;
+	transform: translateY(-3px);
+}
+
+/* Hover effect for list items */
+.list-unstyled li {
+	transition: transform 0.3s;
+}
+
+.list-unstyled li:hover {
+	transform: translateX(5px);
+}
+/* WhatsApp Button Styles */
+#chatButton {
+	transition: all 0.3s ease;
+	animation: pulse 2s infinite;
+}
+
+#chatButton:hover {
+	transform: scale(1.1);
+}
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+	}
+	70% {
+		box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+	}
+}
+
+/* Chat Popup Styles */
+#chatPopup {
+	border-radius: 10px 10px 0 0;
+	transition: all 0.3s ease;
+}
+
+.quick-message {
+	transition: all 0.2s ease;
+}
+
+.quick-message:hover {
+	background-color: #25d366;
+	color: white !important;
 }
