@@ -1,0 +1,24 @@
+.hero {
+    background: url("../image/hero.jpg") no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.service-icon {
+    font-size: 40px;
+    color: #0d6efd;
+}
+.testimonial {
+    font-style: italic;
+}
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
