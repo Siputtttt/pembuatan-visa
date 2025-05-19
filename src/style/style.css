@@ -8,8 +8,8 @@ body {
 }
 .hero {
 	min-height: 100vh; /* Full viewport height */
-	background: linear-gradient(rgba(0, 0, 0, 0.635), rgba(231, 181, 18, 0.596)),
-		url("../image/backdrop-hero.png") no-repeat center center;
+	background: linear-gradient(rgba(0, 0, 0, 0.448), rgba(15, 15, 15, 0.576)),
+		url("../image/hero-parallax.jpg") no-repeat center center;
 	background-size: cover;
 	background-attachment: fixed;
 	display: flex;
@@ -684,7 +684,13 @@ footer a:hover {
 		width: 100%;
 		flex-direction: row;
 		justify-content: space-between;
-		padding: 0 80px 40px;
+		padding: 0 10px 10px;
+		gap: 0;
+	}
+
+	.timeline-container::before {
+		left: 80px;
+		right: 80px;
 	}
 
 	.step {
@@ -694,7 +700,4 @@ footer a:hover {
 	.step p {
 		font-size: 1rem;
 	}
-}
-.visa-tipe {
-	min-height: 70vh;
 }

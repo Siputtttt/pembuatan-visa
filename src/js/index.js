@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	chatButton.addEventListener("click", function () {
 		chatPopup.classList.toggle("d-none");
 	});
-	
+
 	if (chatButtonChat) {
 		chatButtonChat.addEventListener("click", function () {
 			chatPopup.classList.toggle("d-none");
@@ -97,7 +97,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 });
 
-
 document.querySelectorAll(".text-jenis").forEach((item) => {
 	item.addEventListener("click", function () {
 		if (this.classList.contains("active")) {
@@ -108,5 +107,25 @@ document.querySelectorAll(".text-jenis").forEach((item) => {
 				.forEach((el) => el.classList.remove("active"));
 			this.classList.add("active");
 		}
+	});
+});
+
+// wecha
+
+document.getElementById("wechatButton").addEventListener("click", function () {
+	document.getElementById("wechatPopup").classList.toggle("d-none");
+	document.getElementById("chatPopup").classList.add("d-none");
+});
+
+document.getElementById("closeWeChat").addEventListener("click", function () {
+	document.getElementById("wechatPopup").classList.add("d-none");
+});
+
+
+// Quick message
+document.querySelectorAll(".quick-message").forEach((button) => {
+	button.addEventListener("click", function () {
+		document.getElementById("chatInput").value =
+			this.getAttribute("data-message");
 	});
 });
