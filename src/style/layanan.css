@@ -212,6 +212,7 @@
     flex-direction: row; /* pastikan horizontal */
     align-items: flex-start;
     position: relative;
+    z-index: 1;
   }
 
   .step .icon {
@@ -224,6 +225,7 @@
     align-items: center;
     justify-content: center;
     z-index: 1;
+    position: relative; /* ⬅️ Tambahkan baris ini */
     margin-right: 15px;
     margin-top: 5px;
     margin-bottom: 0 !important; /* hapus margin bawah mb-3 */
@@ -289,7 +291,13 @@
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 80px 40px;
+    padding: 0 10px 10px;
+    gap: 0;
+  }
+
+  .timeline-container::before {
+    left: 80px;
+    right: 80px;
   }
 
   .step {
