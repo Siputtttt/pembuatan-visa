@@ -54,14 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	chatButton.addEventListener("click", function () {
 		chatPopup.classList.toggle("d-none");
 	});
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-=======
-	
->>>>>>> 2ba82e3 (fix)
->>>>>>> 6a859e8 (fix)
 	if (chatButtonChat) {
 		chatButtonChat.addEventListener("click", function () {
 			chatPopup.classList.toggle("d-none");
@@ -104,10 +96,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 });
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 2ba82e3 (fix)
 document.querySelectorAll(".text-jenis").forEach((item) => {
 	item.addEventListener("click", function () {
 		if (this.classList.contains("active")) {
