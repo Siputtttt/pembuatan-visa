@@ -1,3 +1,8 @@
+html,
+body {
+	overflow-x: hidden !important;
+	width: 100%;
+}
 .nav-leuser {
 	background-color: #dd8144 !important;
 }
@@ -16,6 +21,27 @@
 
 /* jenis visa css */
 /* Section padding & background */
+.prosedur {
+	background-image: url("../image/layanan-parallax.png");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+
+.prosedur::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(160, 101, 53, 0.223);
+	z-index: -1;
+}
+
 #layanan-visa {
 	background: #fff; /* soft light gray */
 	padding-top: 60px;
