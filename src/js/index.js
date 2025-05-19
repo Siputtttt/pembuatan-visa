@@ -54,10 +54,11 @@ document.addEventListener("DOMContentLoaded", function () {
 	chatButton.addEventListener("click", function () {
 		chatPopup.classList.toggle("d-none");
 	});
-	
-	chatButtonChat.addEventListener("click", function () {
-		chatPopup.classList.toggle("d-none");
-	});
+	if (chatButtonChat) {
+		chatButtonChat.addEventListener("click", function () {
+			chatPopup.classList.toggle("d-none");
+		});
+	}
 
 	closeChat.addEventListener("click", function () {
 		chatPopup.classList.add("d-none");
@@ -95,56 +96,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-	new Swiper(".featuresSwiper", {
-		slidesPerView: 1,
-		spaceBetween: 20,
-		pagination: {
-			el: ".swiper-pagination",
-			clickable: true,
-		},
-		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
-		},
-		breakpoints: {
-			576: {
-				slidesPerView: 2,
-			},
-			992: {
-				slidesPerView: 3,
-			},
-		},
-	});
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-	new Swiper(".testimonialSwiper", {
-		slidesPerView: 1,
-		spaceBetween: 20,
-		pagination: {
-			el: ".swiper-pagination",
-			clickable: true,
-		},
-		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
-		},
-		breakpoints: {
-			768: {
-				slidesPerView: 2,
-			},
-			992: {
-				slidesPerView: 3,
-			},
-		},
-		autoplay: {
-			delay: 5000,
-			disableOnInteraction: false,
-		},
-	});
-});
-
 document.querySelectorAll(".text-jenis").forEach((item) => {
 	item.addEventListener("click", function () {
 		if (this.classList.contains("active")) {
@@ -155,5 +106,24 @@ document.querySelectorAll(".text-jenis").forEach((item) => {
 				.forEach((el) => el.classList.remove("active"));
 			this.classList.add("active");
 		}
+	});
+});
+
+// wecha
+document.getElementById("wechatButton").addEventListener("click", function () {
+	document.getElementById("wechatPopup").classList.toggle("d-none");
+	document.getElementById("chatPopup").classList.add("d-none");
+});
+
+document.getElementById("closeWeChat").addEventListener("click", function () {
+	document.getElementById("wechatPopup").classList.add("d-none");
+});
+
+
+// Quick message
+document.querySelectorAll(".quick-message").forEach((button) => {
+	button.addEventListener("click", function () {
+		document.getElementById("chatInput").value =
+			this.getAttribute("data-message");
 	});
 });
