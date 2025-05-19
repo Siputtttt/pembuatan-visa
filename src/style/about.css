@@ -1,0 +1,243 @@
+.hero-about {
+  min-height: 60vh; /* Full viewport height */
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../image/company.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Tentang Kami Section */
+.tentang-kami {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+
+.tentang-kami h2 {
+  color: #2c3e50;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.tentang-kami p {
+  font-size: 1rem;
+  color: #6c757d;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+.tentang-kami img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Tombol */
+.tentang-kami .btn-primary {
+  padding: 10px 24px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+/* Responsive untuk Mobile */
+@media (max-width: 767.98px) {
+  .tentang-kami h2 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  .tentang-kami p {
+    text-align: justify;
+  }
+
+  .tentang-kami .btn-primary {
+    display: block;
+    margin: 0 auto;
+  }
+}
+.lokasi-kami {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.lokasi-kami h2 {
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.lokasi-kami p,
+.lokasi-kami ul {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.lokasi-kami ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.lokasi-kami ul li {
+  margin-bottom: 8px;
+}
+
+.lokasi-kami .btn {
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 8px;
+}
+
+.map-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 991.98px) {
+  .lokasi-kami .row {
+    flex-direction: column;
+  }
+
+  .lokasi-kami .col-lg-6 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .lokasi-kami ul {
+    display: inline-block;
+    text-align: left;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .lokasi-kami h2 {
+    font-size: 1.5rem;
+  }
+
+  .lokasi-kami p {
+    font-size: 0.95rem;
+  }
+
+  .lokasi-kami .btn {
+    font-size: 0.95rem;
+    padding: 8px 20px;
+  }
+
+  .map-container {
+    min-height: 250px;
+  }
+}
+
+.visi-misi h2 {
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.visi-misi p,
+.visi-misi li {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.visi-misi h4 {
+  font-size: 1.25rem;
+}
+
+.visi-misi ul {
+  padding-left: 1rem;
+}
+
+@media (max-width: 575.98px) {
+  .visi-misi h2 {
+    font-size: 1.5rem;
+  }
+
+  .visi-misi h4 {
+    font-size: 1.1rem;
+  }
+
+  .visi-misi p,
+  .visi-misi li {
+    font-size: 0.95rem;
+  }
+}
+.testimoni {
+  background-color: #f8f9fa;
+}
+
+.client-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 4px solid #0d6efd;
+}
+
+.testimonial-item {
+  min-height: 180px;
+}
+
+.testimonial-item p {
+  font-size: 1.125rem;
+  color: #495057;
+}
+
+.testimonial-item h5 {
+  color: #0d6efd;
+}
+
+.testimonial-item small {
+  color: #6c757d;
+}
+
+
+.testimonial-slider .testimonial-item {
+  margin: 0 15px; /* jarak horizontal antar slide */
+}
+
+.testimonial-slider .slick-list {
+  margin: 0 -15px; /* kompensasi padding agar tetap center */
+}
+
+
+@media (max-width: 768px) {
+  .testimonial-item {
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+
+  .testimonial-item p {
+    font-size: 1rem;
+  }
+
+  .testimonial-item h5 {
+    font-size: 1.125rem;
+  }
+
+  .testimonial-item small {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonial-item {
+    padding: 1.25rem 0.75rem;
+  }
+
+  .testimonial-slider .slick-prev,
+  .testimonial-slider .slick-next {
+    display: none; /* Sembunyikan panah di layar sangat kecil */
+  }
+}
+
+
