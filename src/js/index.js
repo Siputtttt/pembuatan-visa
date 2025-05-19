@@ -54,11 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	chatButton.addEventListener("click", function () {
 		chatPopup.classList.toggle("d-none");
 	});
-<<<<<<< HEAD
-
-=======
-	
->>>>>>> 2ba82e3 (fix)
 	if (chatButtonChat) {
 		chatButtonChat.addEventListener("click", function () {
 			chatPopup.classList.toggle("d-none");
@@ -101,10 +96,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 });
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 2ba82e3 (fix)
 document.querySelectorAll(".text-jenis").forEach((item) => {
 	item.addEventListener("click", function () {
 		if (this.classList.contains("active")) {
@@ -119,7 +110,6 @@ document.querySelectorAll(".text-jenis").forEach((item) => {
 });
 
 // wecha
-
 document.getElementById("wechatButton").addEventListener("click", function () {
 	document.getElementById("wechatPopup").classList.toggle("d-none");
 	document.getElementById("chatPopup").classList.add("d-none");

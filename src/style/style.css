@@ -7,19 +7,9 @@ body {
 	background-color: #dd8144 !important;
 }
 .hero {
-	min-height: 100vh; /* Full viewport height */
-<<<<<<< HEAD
-<<<<<<< HEAD
+	min-height: 100vh; 
 	background: linear-gradient(rgba(0, 0, 0, 0.448), rgba(15, 15, 15, 0.576)),
 		url("../image/hero-parallax.jpg") no-repeat center center;
-=======
-	background: linear-gradient(rgba(0, 0, 0, 0.635), rgba(231, 181, 18, 0.596)),
-		url("../image/backdrop-hero.png") no-repeat center center;
->>>>>>> 2ba82e3 (fix)
-=======
-	background: linear-gradient(rgba(0, 0, 0, 0.635), rgba(3, 3, 3, 0.399)),
-		url("../image/hero-parallax.jpg") no-repeat center center;
->>>>>>> b338608 (feat dashboard)
 	background-size: cover;
 	background-attachment: fixed;
 	display: flex;
