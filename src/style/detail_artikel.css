@@ -1,0 +1,99 @@
+.hero-detail-artikel {
+  min-height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../image/artikel.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Untuk teks di tengah secara horizontal */
+  text-align: center;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+.artikel-detail-content {
+  max-width: 100%; /* Lebar penuh kontainer */
+  margin: 0 auto;
+  padding: 20px 15px;
+  background-color: transparent; /* Hilangkan background putih */
+  border-radius: 0;
+  box-shadow: none;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+@media (min-width: 768px) {
+  .artikel-detail-content {
+    max-width: 1200px; /* Lebar maksimum yang cukup luas */
+    padding: 40px 20px;
+  }
+}
+
+.artikel-detail-content h1,
+.artikel-detail-content h2,
+.artikel-detail-content h3,
+.artikel-detail-content h4 {
+  font-weight: 700;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  color: #212529;
+}
+
+.artikel-detail-content h1 { font-size: 2rem; }
+.artikel-detail-content h2 { font-size: 1.75rem; }
+.artikel-detail-content h3 { font-size: 1.5rem; }
+.artikel-detail-content h4 { font-size: 1.25rem; }
+
+.artikel-detail-content p {
+  margin-bottom: 1.2em;
+}
+
+.artikel-detail-content blockquote {
+  margin: 1.5em 0;
+  padding: 1em 1.5em;
+  background: #f8f9fa;
+  border-left: 5px solid #ffc107;
+  font-style: italic;
+  color: #555;
+}
+
+.artikel-detail-content ul,
+.artikel-detail-content ol {
+  padding-left: 2rem;
+  margin-bottom: 1.2em;
+}
+
+.artikel-detail-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 8px;
+}
+
+.artikel-detail-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+}
+.artikel-detail-content th,
+.artikel-detail-content td {
+  border: 1px solid #dee2e6;
+  padding: 0.75rem;
+  text-align: left;
+}
+.artikel-detail-content th {
+  background-color: #f1f1f1;
+}
+
+@media (max-width: 576px) {
+  .artikel-detail-content {
+    font-size: 1rem;
+    padding: 20px 15px;
+  }
+  .artikel-detail-content h1 { font-size: 1.5rem; }
+  .artikel-detail-content h2 { font-size: 1.3rem; }
+  .artikel-detail-content h3 { font-size: 1.15rem; }
+}

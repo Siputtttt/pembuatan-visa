@@ -1,0 +1,75 @@
+.hero-artikel {
+  min-height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../image/artikel.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Untuk teks di tengah secara horizontal */
+  text-align: center;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-img-top {
+  height: 300px; /* Atur tinggi sesuai keinginan, bisa 180px atau 150px juga */
+  object-fit: cover;
+}
+
+.pagination .page-link {
+  color: #000;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #000;
+}
+
+/* Responsive card image height */
+@media (max-width: 992px) {
+  .card-img-top {
+    height: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 200px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-body p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 180px;
+  }
+
+  .card-title {
+    font-size: 0.95rem;
+  }
+
+  .pagination .page-link {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.6rem;
+  }
+}
