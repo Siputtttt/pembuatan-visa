@@ -1,513 +1,581 @@
+html,
+body {
+	overflow-x: hidden !important;
+	width: 100%;
+}
+.nav-leuser {
+	background-color: #dd8144 !important;
+}
 .hero-layanan {
-  min-height: 60vh; /* Full viewport height */
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../image/cara_membuat_visa_1.jpg") no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  align-items: center;
-  padding: 80px 0;
-  position: relative;
-  overflow: hidden;
+	min-height: 40vh; /* Full viewport height */
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url("../image/cara_membuat_visa_1.jpg") no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+	align-items: center;
+	padding: 80px 0;
+	position: relative;
+	overflow: hidden;
 }
 
 /* jenis visa css */
 /* Section padding & background */
+.prosedur {
+	background-image: url("../image/layanan-parallax.png");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+
+.prosedur::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(160, 101, 53, 0.223);
+	z-index: -1;
+}
+
 #layanan-visa {
-  background: #fff; /* soft light gray */
-  padding-top: 60px;
-  padding-bottom: 60px;
+	background: #fff; /* soft light gray */
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 /* Judul section */
 #layanan-visa h2 {
-  font-weight: 700;
-  font-size: 2.2rem;
-  color: #2c3e50;
-  margin-bottom: 40px;
+	font-weight: 700;
+	font-size: 2.2rem;
+	color: #2c3e50;
+	margin-bottom: 40px;
 }
 
 /* Kartu layanan */
 #layanan-visa .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 16px;
-  border: none;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	border-radius: 16px;
+	border: none;
 }
 
 #layanan-visa .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+	transform: translateY(-6px);
+	box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
 }
 
 /* Ikon dalam kartu */
 #layanan-visa i {
-  font-size: 3rem;
-  margin-bottom: 15px;
-  display: block;
+	font-size: 3rem;
+	margin-bottom: 15px;
+	display: block;
 }
 
 /* Judul layanan */
 #layanan-visa .card-title {
-  font-weight: 600;
-  color: #34495e;
-  margin-bottom: 12px;
+	font-weight: 600;
+	color: #34495e;
+	margin-bottom: 12px;
 }
 
 /* Deskripsi layanan */
 #layanan-visa .card-text {
-  font-size: 0.95rem;
-  color: #6c757d;
+	font-size: 0.95rem;
+	color: #6c757d;
 }
 
 #layanan-visa .card-body {
-  text-align: center; /* pastikan semua isi center */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	text-align: center; /* pastikan semua isi center */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 #layanan-visa .card-body .btn {
-  margin-top: 15px;
-  width: fit-content; /* supaya tombol sesuai teks dan bisa center */
-  align-self: center; /* pastikan di tengah flex */
+	margin-top: 15px;
+	width: fit-content; /* supaya tombol sesuai teks dan bisa center */
+	align-self: center; /* pastikan di tengah flex */
 }
 
 /* Warna khusus ikon */
 .text-pink {
-  color: #e83e8c;
+	color: #e83e8c;
 }
 
 /* RESPONSIVE LAYANAN VISA */
 
 /* Ukuran font & layout di layar kecil */
 @media (max-width: 767.98px) {
-  #layanan-visa h2 {
-    font-size: 1.8rem;
-    text-align: center;
-  }
+	#layanan-visa h2 {
+		font-size: 1.8rem;
+		text-align: center;
+	}
 
-  #layanan-visa .card {
-    margin-bottom: 20px;
-  }
+	#layanan-visa .card {
+		margin-bottom: 20px;
+	}
 
-  #layanan-visa .card-title {
-    font-size: 1rem;
-    text-align: center;
-  }
+	#layanan-visa .card-title {
+		font-size: 1rem;
+		text-align: center;
+	}
 
-  #layanan-visa .card-text {
-    font-size: 0.9rem;
-    text-align: center;
-  }
+	#layanan-visa .card-text {
+		font-size: 0.9rem;
+		text-align: center;
+	}
 
-  #layanan-visa i {
-    font-size: 2.5rem;
-  }
+	#layanan-visa i {
+		font-size: 2.5rem;
+	}
 }
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  #layanan-visa h2 {
-    font-size: 2rem;
-  }
+	#layanan-visa h2 {
+		font-size: 2rem;
+	}
 
-  #layanan-visa i {
-    font-size: 2.7rem;
-  }
+	#layanan-visa i {
+		font-size: 2.7rem;
+	}
 
-  #layanan-visa .card-title {
-    font-size: 1.1rem;
-  }
+	#layanan-visa .card-title {
+		font-size: 1.1rem;
+	}
 
-  #layanan-visa .card-text {
-    font-size: 0.95rem;
-  }
+	#layanan-visa .card-text {
+		font-size: 0.95rem;
+	}
 }
 
 /* Laptop & Desktop */
 @media (min-width: 992px) {
-  #layanan-visa .card-body {
-    min-height: 220px; /* pastikan tinggi seragam */
-  }
+	#layanan-visa .card-body {
+		min-height: 220px; /* pastikan tinggi seragam */
+	}
 }
 
 /* prosedur css */
+.prosedur{
+	background-image: url("../image/layanan-parallax.png");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+
+.prosedur::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(160, 101, 53, 0.223);
+	z-index: -1;
+}
 #prosedur-visa h2 {
-  font-weight: 700;
-  font-size: 2.2rem;
-  color: #2c3e50;
-  margin-bottom: 40px;
+	font-weight: 700;
+	font-size: 2.2rem;
+	color: #2c3e50;
+	margin-bottom: 40px;
 }
 
 .timeline-container {
-  gap: 50px;
-  position: relative;
-  padding-bottom: 40px;
-  scroll-behavior: smooth;
+	gap: 50px;
+	position: relative;
+	padding-bottom: 40px;
+	scroll-behavior: smooth;
 }
 
 .timeline-container::before {
-  content: "";
-  position: absolute;
-  top: 40px; /* vertical center dari icon */
-  left: 150px;
-  right: 150px;
-  height: 4px;
-  background: linear-gradient(to right, #0d6efd, #0dcaf0);
-  z-index: 0;
+	content: "";
+	position: absolute;
+	top: 40px; /* vertical center dari icon */
+	left: 150px;
+	right: 150px;
+	height: 4px;
+	background: linear-gradient(to right, #0d6efd, #0dcaf0);
+	z-index: 0;
 }
 
 .step {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	flex-shrink: 0;
 }
-.step-1 { animation-delay: 0.1s; }
-.step-2 { animation-delay: 0.2s; }
-.step-3 { animation-delay: 0.3s; }
-.step-4 { animation-delay: 0.4s; }
-.step-5 { animation-delay: 0.5s; }
-.step-6 { animation-delay: 0.6s; }
-
+.step-1 {
+	animation-delay: 0.1s;
+}
+.step-2 {
+	animation-delay: 0.2s;
+}
+.step-3 {
+	animation-delay: 0.3s;
+}
+.step-4 {
+	animation-delay: 0.4s;
+}
+.step-5 {
+	animation-delay: 0.5s;
+}
+.step-6 {
+	animation-delay: 0.6s;
+}
 
 .icon {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 28px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 1;
-  margin-bottom: 10px; /* beri jarak icon ke teks */
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 28px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	position: relative;
+	z-index: 1;
+	margin-bottom: 10px; /* beri jarak icon ke teks */
 }
 
 @media (max-width: 767.98px) {
-  .timeline-container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 0 20px 40px;
-    position: relative;
-    overflow-x: hidden;
-  }
+	.timeline-container {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		padding: 0 20px 40px;
+		position: relative;
+		overflow-x: hidden;
+	}
 
-  .timeline-container::after {
-    content: "";
-    position: absolute;
-    left: 40px;
-    top: 30px;
-    bottom: 90px;
-    width: 3px;
-    background: linear-gradient(to bottom, #0d6efd, #0dcaf0);
-    z-index: 0;
-  }
+	.timeline-container::after {
+		content: "";
+		position: absolute;
+		left: 40px;
+		top: 30px;
+		bottom: 90px;
+		width: 3px;
+		background: linear-gradient(to bottom, #0d6efd, #0dcaf0);
+		z-index: 0;
+	}
 
-  .step {
-    display: flex;
-    flex-direction: row; /* pastikan horizontal */
-    align-items: flex-start;
-    position: relative;
-  }
+	.step {
+		display: flex;
+		flex-direction: row; /* pastikan horizontal */
+		align-items: flex-start;
+		position: relative;
+		z-index: 1;
+	}
 
-  .step .icon {
-    width: 50px;
-    height: 50px;
-    font-size: 20px;
-    border-radius: 50%;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-    margin-right: 15px;
-    margin-top: 5px;
-    margin-bottom: 0 !important; /* hapus margin bawah mb-3 */
-  }
+	.step .icon {
+		width: 50px;
+		height: 50px;
+		font-size: 20px;
+		border-radius: 50%;
+		flex-shrink: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 1;
+		position: relative; /* ⬅️ Tambahkan baris ini */
+		margin-right: 15px;
+		margin-top: 5px;
+		margin-bottom: 0 !important; /* hapus margin bawah mb-3 */
+	}
 
-  .step .card-content {
-    background: #fff;
-    border-radius: 12px;
-    padding: 15px 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    flex: 1;
-    min-width: 0; /* biar flex-shrink bisa bekerja */
-  }
+	.step .card-content {
+		background: #fff;
+		border-radius: 12px;
+		padding: 15px 20px;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+		flex: 1;
+		min-width: 0; /* biar flex-shrink bisa bekerja */
+	}
 
-  .step .card-content h6 {
-    font-weight: 600;
-    font-size: 1rem;
-    margin-bottom: 5px;
-    color: #2c3e50;
-  }
+	.step .card-content h6 {
+		font-weight: 600;
+		font-size: 1rem;
+		margin-bottom: 5px;
+		color: #2c3e50;
+	}
 
-  .step .card-content p {
-    font-size: 0.95rem;
-    color: #6c757d;
-    margin: 0;
-  }
+	.step .card-content p {
+		font-size: 0.95rem;
+		color: #6c757d;
+		margin: 0;
+	}
 }
 
 /* Tablet: sedikit lebih besar & horizontal */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .timeline-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5px;
-  }
+	.timeline-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 5px;
+	}
 
-  .timeline-container::before {
-    left: 60px;
-    right: 60px;
-  }
+	.timeline-container::before {
+		left: 60px;
+		right: 60px;
+	}
 
-  .icon {
-    width: 65px;
-    height: 65px;
-    font-size: 26px;
-  }
+	.icon {
+		width: 65px;
+		height: 65px;
+		font-size: 26px;
+	}
 
-  .step {
-    width: 135px;
-  }
+	.step {
+		width: 135px;
+	}
 
-  .step p {
-    font-size: 0.95rem;
-  }
+	.step p {
+		font-size: 0.95rem;
+	}
 }
 
 /* Desktop: default behavior */
 @media (min-width: 992px) {
-  .timeline-container {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 80px 40px;
-  }
+	.timeline-container {
+		display: flex;
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0 10px 10px;
+		gap: 0;
+	}
 
-  .step {
-    width: 180px;
-  }
+	.timeline-container::before {
+		left: 80px;
+		right: 80px;
+	}
 
-  .step p {
-    font-size: 1rem;
-  }
+	.step {
+		width: 180px;
+	}
+
+	.step p {
+		font-size: 1rem;
+	}
 }
 
 /* keunggulan css */
 /* Section padding & background */
 #keunggulan {
-  background-color: #fff; /* soft light gray */
-  padding-top: 60px;
-  padding-bottom: 60px;
+	background-color: #fff; /* soft light gray */
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 /* Judul section */
 #keunggulan h2 {
-  font-weight: 700;
-  font-size: 2.2rem;
-  color: #2c3e50;
-  margin-bottom: 10px;
+	font-weight: 700;
+	font-size: 2.2rem;
+	color: #2c3e50;
+	margin-bottom: 10px;
 }
 
 /* Subjudul / deskripsi */
 #keunggulan p.text-muted {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 1rem;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1rem;
 }
 
 /* Box fitur */
 #keunggulan .feature-box {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 16px;
-  background-color: #fff;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	border-radius: 16px;
+	background-color: #fff;
 }
 
 #keunggulan .feature-box:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+	transform: translateY(-6px);
+	box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
 }
 
 /* Ikon */
 #keunggulan i {
-  font-size: 3rem;
-  margin-bottom: 15px;
-  display: block;
+	font-size: 3rem;
+	margin-bottom: 15px;
+	display: block;
 }
 
 /* Judul fitur */
 #keunggulan .feature-box h5 {
-  font-size: 1.2rem;
-  color: #34495e;
-  margin-bottom: 12px;
+	font-size: 1.2rem;
+	color: #34495e;
+	margin-bottom: 12px;
 }
 
 /* Deskripsi fitur */
 #keunggulan .feature-box p {
-  font-size: 0.95rem;
-  color: #6c757d;
+	font-size: 0.95rem;
+	color: #6c757d;
 }
 
 /* RESPONSIVE: Section Keunggulan */
 @media (max-width: 991.98px) {
-  #keunggulan {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
+	#keunggulan {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
 
-  #keunggulan h2 {
-    font-size: 1.9rem;
-    text-align: center;
-  }
+	#keunggulan h2 {
+		font-size: 1.9rem;
+		text-align: center;
+	}
 
-  #keunggulan p.text-muted {
-    font-size: 0.95rem;
-    text-align: center;
-    margin-bottom: 30px;
-  }
+	#keunggulan p.text-muted {
+		font-size: 0.95rem;
+		text-align: center;
+		margin-bottom: 30px;
+	}
 
-  #keunggulan .feature-box h5 {
-    font-size: 1.1rem;
-    text-align: center;
-  }
+	#keunggulan .feature-box h5 {
+		font-size: 1.1rem;
+		text-align: center;
+	}
 
-  #keunggulan .feature-box p {
-    font-size: 0.9rem;
-    text-align: center;
-  }
+	#keunggulan .feature-box p {
+		font-size: 0.9rem;
+		text-align: center;
+	}
 
-  #keunggulan i {
-    font-size: 2.5rem;
-    text-align: center;
-  }
+	#keunggulan i {
+		font-size: 2.5rem;
+		text-align: center;
+	}
 }
 
 @media (max-width: 767.98px) {
-  #keunggulan {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
+	#keunggulan {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
 
-  #keunggulan h2 {
-    font-size: 1.7rem;
-  }
+	#keunggulan h2 {
+		font-size: 1.7rem;
+	}
 
-  #keunggulan .feature-box {
-    margin-bottom: 30px;
-    text-align: center;
-    padding: 20px;
-  }
+	#keunggulan .feature-box {
+		margin-bottom: 30px;
+		text-align: center;
+		padding: 20px;
+	}
 
-  #keunggulan i {
-    font-size: 2.2rem;
-    margin-bottom: 12px;
-  }
+	#keunggulan i {
+		font-size: 2.2rem;
+		margin-bottom: 12px;
+	}
 
-  #keunggulan .feature-box h5 {
-    font-size: 1rem;
-  }
+	#keunggulan .feature-box h5 {
+		font-size: 1rem;
+	}
 
-  #keunggulan .feature-box p {
-    font-size: 0.85rem;
-  }
+	#keunggulan .feature-box p {
+		font-size: 0.85rem;
+	}
 }
 
 /* visa ke negara lain css */
 #visa-negara-lain {
-  background-color: #fff;
-  padding-top: 60px;
-  padding-bottom: 60px;
+	background-color: #fff;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 #visa-negara-lain h2 {
-  font-weight: 700;
-  font-size: 2.2rem;
-  color: #2c3e50;
+	font-weight: 700;
+	font-size: 2.2rem;
+	color: #2c3e50;
 }
 
 #visa-negara-lain p.text-muted {
-  font-size: 1rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+	font-size: 1rem;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #visa-negara-lain .country-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #fff;
-  border-radius: 12px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	background-color: #fff;
+	border-radius: 12px;
 }
 
 #visa-negara-lain .country-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+	transform: translateY(-5px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
 
 #visa-negara-lain img {
-  width: 40px;
-  height: auto;
+	width: 40px;
+	height: auto;
 }
 
 /* RESPONSIVE: Visa ke Negara Lain */
 @media (max-width: 991.98px) {
-  #visa-negara-lain {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
+	#visa-negara-lain {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
 
-  #visa-negara-lain h2 {
-    font-size: 1.9rem;
-    text-align: center;
-  }
+	#visa-negara-lain h2 {
+		font-size: 1.9rem;
+		text-align: center;
+	}
 
-  #visa-negara-lain p.text-muted {
-    font-size: 0.95rem;
-    text-align: center;
-    margin-bottom: 30px;
-  }
+	#visa-negara-lain p.text-muted {
+		font-size: 0.95rem;
+		text-align: center;
+		margin-bottom: 30px;
+	}
 
-  #visa-negara-lain .country-card {
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 25px;
-  }
+	#visa-negara-lain .country-card {
+		text-align: center;
+		padding: 20px;
+		margin-bottom: 25px;
+	}
 
-  #visa-negara-lain img {
-    width: 35px;
-    margin-bottom: 10px;
-  }
+	#visa-negara-lain img {
+		width: 35px;
+		margin-bottom: 10px;
+	}
 }
 
 @media (max-width: 767.98px) {
-  #visa-negara-lain {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
+	#visa-negara-lain {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
 
-  #visa-negara-lain h2 {
-    font-size: 1.7rem;
-  }
+	#visa-negara-lain h2 {
+		font-size: 1.7rem;
+	}
 
-  #visa-negara-lain p.text-muted {
-    font-size: 0.9rem;
-  }
+	#visa-negara-lain p.text-muted {
+		font-size: 0.9rem;
+	}
 
-  #visa-negara-lain .country-card {
-    padding: 18px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
+	#visa-negara-lain .country-card {
+		padding: 18px;
+		text-align: center;
+		margin-bottom: 20px;
+	}
 
-  #visa-negara-lain img {
-    width: 32px;
-  }
+	#visa-negara-lain img {
+		width: 32px;
+	}
 }
